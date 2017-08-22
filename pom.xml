@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.edmunds.oss.etm</groupId>
+    <groupId>com.davidtrott.oss.etm</groupId>
     <artifactId>etm-identity</artifactId>
     <version>1.0.0</version>
     <name>ETM - Identity</name>
