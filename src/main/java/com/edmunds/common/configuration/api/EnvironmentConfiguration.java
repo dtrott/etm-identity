@@ -29,13 +29,6 @@ public class EnvironmentConfiguration {
     private String site;
 
     /**
-     * Url prefix used when building URL's for customer facing web applications.
-     * <p/>
-     * Typical values: DEV-EPE3
-     */
-    private String urlPrefix;
-
-    /**
      * True if this client should be added to the ETM pool.
      */
     private boolean etmClientEnabled;
@@ -45,11 +38,10 @@ public class EnvironmentConfiguration {
      */
     public EnvironmentConfiguration() {
         this.zooKeeperHostName = "localhost";
-        this.etmClientEnabled = true;
+        this.etmClientEnabled = false;
         this.environmentName = "development";
         this.dataCenter = "development";
         this.site = "development";
-        this.urlPrefix = "";
     }
 
     /**
@@ -113,21 +105,6 @@ public class EnvironmentConfiguration {
 
     public void setSite(String site) {
         this.site = (site == null) ? null : site.toLowerCase();
-    }
-
-    /**
-     * Url prefix used when building URL's for customer facing web applications.
-     * <p/>
-     * Typical values: DEV-EPE3
-     *
-     * @return the URL prefix (default: "").
-     */
-    public String getUrlPrefix() {
-        return urlPrefix;
-    }
-
-    public void setUrlPrefix(String urlPrefix) {
-        this.urlPrefix = (urlPrefix == null) ? null : urlPrefix.toLowerCase();
     }
 
     /**
